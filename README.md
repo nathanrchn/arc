@@ -9,7 +9,7 @@ Theses features uses two different endpoints to access the AI services:
 1. `https://open-ai-chat-omega.vercel.app/api/open-ai-chat-stream` for OpenAI models
 2. `https://open-ai-chat-omega.vercel.app/api/claude-stream` for Anthropic models
 
-None of theses endpoints are protected against parallel requests (I tested up to 100 parallel requests). I used the same user JWT token for all the requests.
+None of theses endpoints are protected against parallel requests (I tested up to 100 parallel requests). I used the same user JWT token for all the requests. I think it would be easy to use this as an ai provider for a saas or a website. The user token can be easily extracted and then recreated to use the service for free.
 
 Also theses endpoints are weakly protected against multiples modifications of the request body.
 
